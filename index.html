@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<script>
+    function updateGreeting() {
+      const greetingEl = document.getElementById("greeting");
+      const hour = new Date().getHours();
+      let greetingText;
+  
+      if (hour < 12) {
+        greetingText = "🌅 Good Morning!";
+      } else if (hour < 18) {
+        greetingText = "🌞 Good Afternoon!";
+      } else {
+        greetingText = "🌙 Good Evening!";
+      }
+  
+      greetingEl.textContent = `${greetingText} Welcome to my Student Portfolio`;
+    }
+  
+    window.onload = updateGreeting;
+  </script>
+  
+<body>
+
+    
+
+  <!-- Header with Greeting -->
+  <header>
+    <h1 id="greeting"></h1>
+    <nav>
+      <a href="./public/about.html" class="btn">About Me</a>
+      <a href="./public/hobbies.html" class="btn">Hobbies</a>
+      <a href="./public/skills.html" class="btn">Skills</a>
+      <a href="./public/education.html" class="btn">Education</a>
+      <a href="./public/contact.html" class="btn">Contact</a>
+    </nav>
+  </header>
+
+
+
+
+  <footer>
+    <p>Thank you for knowing me!</p>
+  </footer>
+
+  <div id="spotlight"></div>
+
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
